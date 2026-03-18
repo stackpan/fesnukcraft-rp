@@ -1,0 +1,27 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "cases": [
+        {
+          "when": "pk_waystones:gui_protection_false",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:custom_gui/waystone/button/unprotected"
+          }
+        },
+        {
+          "when": "pk_waystones:gui_protection_true",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:custom_gui/waystone/button/protected"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/leather_chestplate"
+      }
+    },
+    "oversized_in_gui": true
+  }

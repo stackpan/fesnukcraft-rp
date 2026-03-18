@@ -1,0 +1,27 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "cases": [
+        {
+          "when": "pk_waystones:gui_shared_with_placeholder",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:custom_gui/waystone/button/sharedwith"
+          }
+        },
+        {
+          "when": "pk_waystones:gui_shared_with_list",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:custom_gui/waystone/button/sharedwith"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/light_gray_stained_glass_pane"
+      }
+    },
+    "oversized_in_gui": true
+  }

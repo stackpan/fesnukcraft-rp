@@ -1,0 +1,71 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "cases": [
+        {
+          "when": "pk_waystones:andesite_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_andesite"
+          }
+        },
+        {
+          "when": "pk_waystones:sand_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_sand"
+          }
+        },
+        {
+          "when": "pk_waystones:nether_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_nether"
+          }
+        },
+        {
+          "when": "pk_waystones:deepslate_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_deepslate"
+          }
+        },
+        {
+          "when": "pk_waystones:mossy_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_mossy"
+          }
+        },
+        {
+          "when": "pk_waystones:copper_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_copper"
+          }
+        },
+        {
+          "when": "pk_waystones:prismarine_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_prismarine"
+          }
+        },
+        {
+          "when": "pk_waystones:tuff_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:item/waystone_tuff"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:special",
+        "base": "minecraft:item/template_skull",
+        "model": {
+          "type": "minecraft:player_head"
+        }
+      }
+    }
+  }

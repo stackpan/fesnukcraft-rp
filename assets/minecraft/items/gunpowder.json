@@ -1,0 +1,27 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "cases": [
+        {
+          "when": "pk_waystones:gui_page_prev",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:custom_gui/waystone/button/previous_page"
+          }
+        },
+        {
+          "when": "pk_waystones:gui_page_next",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:custom_gui/waystone/button/next_page"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/gunpowder"
+      }
+    },
+    "oversized_in_gui": true
+  }
