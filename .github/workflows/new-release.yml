@@ -1,0 +1,116 @@
+name: New Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Tag release baru (contoh: v1.0.0)"  
+        required: true
+        type: string
+      release_name:
+        description: "Nama release (opsional)"
+        required: false
+        type: string
+      prerelease:
+        description: "Tandai sebagai pre-release"
+        required: true
+        default: false
+        type: boolean
+      generate_notes:
+        description: "Gunakan auto-generated release notes"
+        required: true
+        default: true
+        type: boolean
+      make_latest:
+        description: "Jadikan release sebagai latest"
+        required: true
+        default: true
+        type: boolean
+  push:
+    tags:
+      - "v*"
+
+concurrency:
+  group: release-${{ github.ref_name || inputs.tag_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve release metadata
+        id: meta
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_EVENT_NAME}" == "push" ]]; then
+            tag="${GITHUB_REF_NAME}"
+            release_name="Release ${tag}"
+            prerelease="false"
+            generate_notes="true"
+            make_latest="true"
+          else
+            tag="${{ inputs.tag_name }}"
+            release_name="${{ inputs.release_name }}"
+            prerelease="${{ inputs.prerelease }}"
+            generate_notes="${{ inputs.generate_notes }}"
+            make_latest="${{ inputs.make_latest }}"
+
+            if [[ -z "${release_name}" ]]; then
+              release_name="Release ${tag}"
+            fi
+          fi
+
+          artifact="${tag}-repository.zip"
+
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+          echo "release_name=${release_name}" >> "$GITHUB_OUTPUT"
+          echo "prerelease=${prerelease}" >> "$GITHUB_OUTPUT"
+          echo "generate_notes=${generate_notes}" >> "$GITHUB_OUTPUT"
+          echo "make_latest=${make_latest}" >> "$GITHUB_OUTPUT"
+          echo "artifact=${artifact}" >> "$GITHUB_OUTPUT"
+
+      - name: Create and push tag (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if git rev-parse -q --verify "refs/tags/${{ steps.meta.outputs.tag }}" > /dev/null; then
+            echo "Tag ${{ steps.meta.outputs.tag }} sudah ada, lanjut membuat release."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "${{ steps.meta.outputs.tag }}" -m "Release ${{ steps.meta.outputs.tag }}"
+            git push origin "refs/tags/${{ steps.meta.outputs.tag }}"
+          fi
+
+      - name: Create repository archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          git archive \
+            --format=zip \
+            --output "${{ steps.meta.outputs.artifact }}" \
+            "${{ steps.meta.outputs.tag }}"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.release_name }}
+          generate_release_notes: ${{ steps.meta.outputs.generate_notes }}
+          prerelease: ${{ steps.meta.outputs.prerelease }}
+          make_latest: ${{ steps.meta.outputs.make_latest }}
+          files: ${{ steps.meta.outputs.artifact }}
