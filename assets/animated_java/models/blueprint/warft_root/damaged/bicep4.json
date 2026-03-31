@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/warft_root/bicep4",
+	"textures": {
+		"0": "warft:item/vile_root_damage"
+	}
+}

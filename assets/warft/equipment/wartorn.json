@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "warft:wartorn"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "warft:wartorn"
+      }
+    ]
+  }
+}

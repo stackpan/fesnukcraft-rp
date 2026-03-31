@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/warft_crystal/rib3",
+	"textures": {
+		"0": "warft:item/crystal_heart_damage"
+	}
+}
