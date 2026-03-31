@@ -6,9 +6,14 @@
             "prefix": "custom_gui/"
         },
         {
-			"type": "directory",
-			"source": "blueprint",
-			"prefix": "blueprint/"
-		}
+            "type": "directory",
+            "source": "blueprint",
+            "prefix": "blueprint/"
+        },
+        {
+            "type": "directory",
+            "source": "cnk_entity",
+            "prefix": "entity/"
+        }
     ]
 }

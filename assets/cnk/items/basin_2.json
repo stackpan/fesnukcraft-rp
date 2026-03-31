@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "cnk:block/basin_2",
+    "tints": [
+      {
+        "type": "custom_model_data",
+        "default": 4224483
+      }
+    ]
+  }
+}

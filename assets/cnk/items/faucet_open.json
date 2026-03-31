@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "cnk:block/faucet_open",
+    "tints": [
+      {
+        "type": "custom_model_data",
+        "default": 4224483
+      }
+    ]
+  }
+}
