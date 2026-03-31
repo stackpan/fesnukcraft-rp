@@ -8,25 +8,5 @@
         "pitch": 1
         }
     ]
-  },
-  "music.dragon": {
-    "sounds": [
-      {
-        "name": "true_ending:dragon",
-        "replace": true,
-        "weight": 10000000,
-        "pitch": 1
-        }
-    ]
-  },
-  "music.sily": {
-    "sounds": [
-      {
-        "name": "true_ending:dragon",
-        "replace": true,
-        "weight": 10000000,
-        "pitch": 1
-        }
-    ]
   }
 }
