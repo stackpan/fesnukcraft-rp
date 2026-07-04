@@ -7,14 +7,14 @@
           "when": "pk_waystones:gui_page_prev",
           "model": {
             "type": "minecraft:model",
-            "model": "waystones_rp:custom_gui/waystone/button/previous_page"
+            "model": "waystones_rp:gui/waystone/button/previous_page"
           }
         },
         {
           "when": "pk_waystones:gui_page_next",
           "model": {
             "type": "minecraft:model",
-            "model": "waystones_rp:custom_gui/waystone/button/next_page"
+            "model": "waystones_rp:gui/waystone/button/next_page"
           }
         }
       ],

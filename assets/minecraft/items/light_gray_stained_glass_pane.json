@@ -7,14 +7,14 @@
           "when": "pk_waystones:gui_shared_with_placeholder",
           "model": {
             "type": "minecraft:model",
-            "model": "waystones_rp:custom_gui/waystone/button/sharedwith"
+            "model": "waystones_rp:gui/waystone/button/sharedwith"
           }
         },
         {
           "when": "pk_waystones:gui_shared_with_list",
           "model": {
             "type": "minecraft:model",
-            "model": "waystones_rp:custom_gui/waystone/button/sharedwith"
+            "model": "waystones_rp:gui/waystone/button/sharedwith"
           }
         }
       ],

@@ -1,0 +1,109 @@
+{
+    "model": {
+      "type": "minecraft:select",
+      "property": "minecraft:custom_model_data",
+      "cases": [
+        {
+          "when": "pk_waystones:andesite_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/andesite_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:copper_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/copper_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:deepslate_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/deepslate_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:mossy_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/mossy_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:nether_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/nether_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:prismarine_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/prismarine_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:quartz_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/quartz_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:red_sand_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/red_sand_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:sand_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/sand_waystone"
+          }
+        },
+        {
+          "when": "pk_waystones:tuff_waystone",
+          "model": {
+            "type": "minecraft:model",
+            "model": "waystones_rp:block/tuff_waystone"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:special",
+        "base": "minecraft:item/template_skull",
+        "model": {
+          "type": "minecraft:player_head"
+        }
+      },
+    "transformation": {
+      "left_rotation": [
+        1.0,
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "right_rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "translation": [
+        0.5,
+        0.0,
+        0.5
+      ]
+    }
+    }
+  }
