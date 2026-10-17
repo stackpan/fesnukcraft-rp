@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": "head",
+        "model": {
+          "type": "minecraft:model",
+          "model": "warft:item/dominion_helmet_wearing"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "warft:item/dominion_helmet"
+    }
+  }
+}

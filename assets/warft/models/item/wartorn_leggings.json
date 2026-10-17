@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "warft:item/wartorn_leggings",
+    "particle": "warft:item/wartorn_leggings"
+  }
+}

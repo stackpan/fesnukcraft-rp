@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "warft:item/fortress_matrix",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 0, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [4.57143, 2.28571, 6.85714, 4.57143],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [0, 2.28571, 2.28571, 4.57143],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [0, 2.28571, 2.28571, 4.57143],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [4.57143, 2.28571, 6.85714, 4.57143],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [6.85714, 2.28571, 4.57143, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [6.85714, 0, 4.57143, 2.28571],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

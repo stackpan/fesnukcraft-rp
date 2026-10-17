@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "warft:dominion"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "warft:dominion"
+      }
+    ]
+  }
+}

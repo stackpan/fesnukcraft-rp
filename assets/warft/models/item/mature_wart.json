@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "warft:item/mature_wart",
+    "particle": "warft:item/mature_wart"
+  }
+}

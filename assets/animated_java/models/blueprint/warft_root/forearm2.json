@@ -1,0 +1,48 @@
+{
+	"textures": {
+		"0": "warft:item/vile_root",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [6.5, 8, 6.5],
+			"to": [9.5, 20, 9.5],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [4.44444, 9.25, 5.11111, 12.25],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [3.77778, 9.25, 4.44444, 12.25],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [5.77778, 9.25, 6.44444, 12.25],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [5.11111, 9.25, 5.77778, 12.25],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [5.11111, 9.25, 4.44444, 8.5],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [5.77778, 8.5, 5.11111, 9.25],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

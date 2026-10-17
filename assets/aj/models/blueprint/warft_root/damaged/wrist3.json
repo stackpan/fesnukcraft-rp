@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/warft_root/wrist3",
+	"textures": {
+		"0": "warft:item/vile_root_damage"
+	}
+}

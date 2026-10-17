@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/warft_crystal/gem",
+	"textures": {
+		"0": "warft:item/crystal_heart_damage"
+	}
+}

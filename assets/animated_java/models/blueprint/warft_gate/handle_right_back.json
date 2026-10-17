@@ -1,0 +1,67 @@
+{
+	"textures": {
+		"0": "warft:item/fortress_gate",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [6, 7, 7],
+			"to": [10, 9, 9],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [9, 7, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [4.5, 7.125, 4, 7.375],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [4.5, 0, 4.25, 0.25],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [4.5, 6.75, 4, 7],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [2.375, 1.125, 2.125, 1.375],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [4, 7.75, 4.5, 7.5],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [8.625, 8.75, 9.125, 8.5],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"from": [4, -1, 8],
+			"to": [12, 7, 8],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [8, 5, 9]
+			},
+			"faces": {
+				"north": {
+					"uv": [7.5, 7.875, 8.5, 8.875],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [8.5, 7.875, 7.5, 8.875],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

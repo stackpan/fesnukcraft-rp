@@ -1,0 +1,6 @@
+{
+	"parent": "aj:blueprint/warft_matrix/ne_middle",
+	"textures": {
+		"0": "warft:item/fortress_matrix_damage"
+	}
+}

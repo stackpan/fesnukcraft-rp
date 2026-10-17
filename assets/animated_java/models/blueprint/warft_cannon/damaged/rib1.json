@@ -1,0 +1,6 @@
+{
+	"parent": "animated_java:blueprint/warft_cannon/rib1",
+	"textures": {
+		"0": "warft:item/blaze_cannon_damage"
+	}
+}
