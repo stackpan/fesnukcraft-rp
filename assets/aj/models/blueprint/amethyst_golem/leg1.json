@@ -1,0 +1,49 @@
+{
+	"textures": {
+		"0": "aj:blueprint/amethyst_golem/amethyst_golem",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [5.5, -8, 5],
+			"to": [10.5, 8, 10],
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"origin": [11.54648, 20.25, 9.59445]
+			},
+			"faces": {
+				"north": {
+					"uv": [7.125, 0.625, 7.75, 2.625],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [6.5, 0.625, 7.125, 2.625],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [8.375, 0.625, 9, 2.625],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [7.75, 0.625, 8.375, 2.625],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [7.75, 0.625, 7.125, 0],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [8.375, 0, 7.75, 0.625],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

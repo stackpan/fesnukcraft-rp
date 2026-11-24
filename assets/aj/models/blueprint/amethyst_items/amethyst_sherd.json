@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+	  "layer0": "aj:blueprint/amethyst_items/amethyst_sherd"
+	}
+  }

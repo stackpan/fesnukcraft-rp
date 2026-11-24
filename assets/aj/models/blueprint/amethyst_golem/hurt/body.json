@@ -1,0 +1,7 @@
+{
+	"parent": "aj:blueprint/amethyst_golem/body",
+	"textures": {
+		"0": "aj:blueprint/amethyst_golem/amethyst_golem_hurt",
+		"2": "aj:blueprint/amethyst_golem/empty"
+	}
+}
